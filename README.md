@@ -67,3 +67,7 @@ ___________________________________________________________
 
 ### exercicio_10.py:
 O programa solicita a entrada de 3 frutas, armazena elas em uma lista e compara com uma lista predefinida, por fim, apresenta se as duas listas são iguais ou não!
+___________________________________________________________
+
+### exercicio_11.py:
+O programa solicita a entrada de 2 valores inteiros e positivo, hora de inicio e hora de termino de um jogo, verifica se são horários válidos e porm fim apresenta na tela quantas horas o jogo durou.
