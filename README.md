@@ -52,3 +52,10 @@ ___________________________________________________________
 
 ### exercicio_07.py:
 O programa solicita a entrada de 2 valores inteiros, o resultado é apresentado na tela após do retorno de uma função que calcula a média aritmética dos valores informados.
+___________________________________________________________
+
+### exercicio_08.py:
+O programa solicita a entrada de 1 valor inteiro(x).
+Caso o valor inserido seja par, será apresentado na tela o retorno de uma função que calcula o fatorial de x.
+Caso o valor inserido seja impar, outra função irá apresentar na tela a tabuada de x.
+Obs.: O programa não aceita valor negativo.
