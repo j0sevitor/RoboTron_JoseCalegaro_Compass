@@ -48,3 +48,7 @@ O programa solicita a entrada de 1 valor inteiro maior
 que 2, e ao final apresenta todos os numeros inteiros 
 *IMPARES* entre 0 e o valor inserido.
 Obs.: O numero inserido não é apresentado, mesmo se for impar
+___________________________________________________________
+
+### exercicio_07.py:
+O programa solicita a entrada de 2 valores inteiros, o resultado é apresentado na tela após do retorno de uma função que calcula a média aritmética dos valores informados.
