@@ -1,7 +1,9 @@
-Esse arquivo servirá como base para a execução dos códigos
-dos futuros commit's!!
+# Sobre:
+
+Esse arquivo tem o intuito de auxiliar e servir como base e para a execução dos códigos!!
 ___________________________________________________________
 
+## Como instalar o Python?
 Os códigos a seguir foram desenvolvidos em Python, caso
 você nao possua essa linguagem de programação instalada,
 no link abaixo o Sávio do canal saviopy ensina a baixar 
@@ -72,3 +74,10 @@ ___________________________________________________________
 ### exercicio_12.py:
 O programa solicita a entrada de 1 valor inteiro e positivo, este valor é uma idade em dias, após isso ele calcula e apresenta na tela quantos anos, meses e dias o valor apresentado representa.
 -> Obs.: No cálculo, é considerado que todos os anos tem 365 dias e da mesma forma, todos os meses tem 30 dias.
+___________________________________________________________
+___________________________________________________________
+
+## Autor:
+
+José Vitor Calegaro
+
