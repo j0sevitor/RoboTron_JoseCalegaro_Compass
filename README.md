@@ -63,3 +63,7 @@ ___________________________________________________________
 
 ### exercicio_09.py:
 O programa solicita a entrada de 15 valores inteiros e armazena dentro de uma lista, por fim, apresenta os numeros na ordem inversa.
+___________________________________________________________
+
+### exercicio_10.py:
+O programa solicita a entrada de 3 frutas, armazena elas em uma lista e compara com uma lista predefinida, por fim, apresenta se as duas listas são iguais ou não!
