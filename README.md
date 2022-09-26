@@ -19,27 +19,23 @@ Simples programa que apresenta "Hello World" na tela.
 ___________________________________________________________
 
 ### exercicio_02.py:
-O programa solicita a entrada de 2 valores inteiros(notas),
-e apresenta na tela a média aritmética entre eles.
+O programa solicita a entrada de 2 valores inteiros e positivos(notas), e apresenta na tela a média aritmética entre eles.
 ___________________________________________________________
 
 ### exercicio_03.py:
-O programa solicita a entrada de 2 valores inteiros,
+O programa solicita a entrada de 2 valores inteiros e positivos,
 e através de uma função, apresenta se a soma dos valores
 é 'Par' ou 'Impar'.
 ___________________________________________________________
 
 ### exercicio_04.py:
-O programa solicita a entrada de 1 valor inteiro(idade),
-e através de uma função verifica e apresenta na tela se
-você é maior de idade, se é uma criança, ou se voce é um
-adolecente.
--> Obs.: O programa não aceita valor negativo.
+O programa solicita a entrada de 1 valor inteiro e positivo(idade), e através de uma função verifica e apresenta na
+tela se você é maior de idade, se é uma criança, ou se voce 
+é um adolecente.
 ___________________________________________________________
 
 ### exercicio_05.py:
-O programa solicita a entrada de 20 valores inteiros para
-x, e ao final apresenta a média aritmética dos valores *PARES* inseridos.
+O programa solicita a entrada de 20 valores inteiros e positivos para x, e ao final apresenta a média aritmética dos valores *PARES* inseridos.
 -> Obs.: O programa não trata de nenhuma forma os numeros impares.
 ___________________________________________________________
 
@@ -51,18 +47,17 @@ que 2, e ao final apresenta todos os numeros inteiros
 ___________________________________________________________
 
 ### exercicio_07.py:
-O programa solicita a entrada de 2 valores inteiros, o resultado é apresentado na tela após do retorno de uma função que calcula a média aritmética dos valores informados.
+O programa solicita a entrada de 2 valores inteiros e positivos, o resultado é apresentado na tela após do retorno de uma função que calcula a média aritmética dos valores informados.
 ___________________________________________________________
 
 ### exercicio_08.py:
-O programa solicita a entrada de 1 valor inteiro(x).
+O programa solicita a entrada de 1 valor inteiro e positivo(x).
 Caso o valor inserido seja par, será apresentado na tela o retorno de uma função que calcula o fatorial de x.
 Caso o valor inserido seja impar, outra função irá apresentar na tela a tabuada de x.
--> Obs.: O programa não aceita valor negativo.
 ___________________________________________________________
 
 ### exercicio_09.py:
-O programa solicita a entrada de 15 valores inteiros e armazena dentro de uma lista, por fim, apresenta os numeros na ordem inversa.
+O programa solicita a entrada de 15 valores inteiros e positivos, armazena dentro de uma lista, e por fim, apresenta os numeros na ordem inversa.
 ___________________________________________________________
 
 ### exercicio_10.py:
@@ -71,3 +66,9 @@ ___________________________________________________________
 
 ### exercicio_11.py:
 O programa solicita a entrada de 2 valores inteiros e positivo, hora de inicio e hora de termino de um jogo, verifica se são horários válidos e porm fim apresenta na tela quantas horas o jogo durou.
+
+___________________________________________________________
+
+### exercicio_12.py:
+O programa solicita a entrada de 1 valor inteiro e positivo, este valor é uma idade em dias, após isso ele calcula e apresenta na tela quantos anos, meses e dias o valor apresentado representa.
+-> Obs.: No cálculo, é considerado que todos os anos tem 365 dias e da mesma forma, todos os meses tem 30 dias.
