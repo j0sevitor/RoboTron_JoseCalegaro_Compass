@@ -79,16 +79,16 @@ ___________________________________________________________
 O programa é diferente dos outros apresentados, em suma ele abre um arquivo JSON e guarda na variável conteúdo. Após temos a possibilidade de executar 4 funções: ex_01(), ex_02(), ex_03() & ex_04(). O programa conta também com a função principal(main). No JSON contém informações referente a uma partida de futebol da copa do Brasil.
 
 
-##### ex_01(): 
+* ##### ex_01(): 
 apresenta todo o conteudo do JSON
 
-##### ex_02(): 
+* ##### ex_02(): 
 Verifica qual foi o time vencedor e apresenta o nome do mesmo
 
-##### ex_03(): 
+* ##### ex_03(): 
 Armazena os valores: Nome do estádio, Placar & Status do jogo, nas respectivas variáveis: ne, p & sj. Por fim apresenta os valores das 3 variávies.
 
-##### ex_04(): 
+* ##### ex_04(): 
 Apresenta todas as chaves e valores contidos no JSON referente ao time visitante. 
 
 ___________________________________________________________
