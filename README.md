@@ -1,12 +1,12 @@
 # Sobre:
 
-Esse arquivo tem o intuito de auxiliar e servir como base e para a execução dos códigos!!
+Esse arquivo tem o intuito de auxiliar e servir como base e para a execução dos códigos, cada código a seguir refere-se a um exercício das listas solicitadas na 4ª Sprint da trilha RoboTron do programa de bolsas da Compass!!
 ___________________________________________________________
 
 ## Como instalar o Python?
 Os códigos a seguir foram desenvolvidos em Python, caso
 você nao possua essa linguagem de programação instalada,
-no link abaixo o Sávio do canal saviopy ensina a baixar 
+no link abaixo o Sávio do canal 'saviopy' ensina a baixar 
 e instalar o Python e o Visual Studio Code(editor de
 código).
 
@@ -68,12 +68,29 @@ ___________________________________________________________
 
 ### exercicio_11.py:
 O programa solicita a entrada de 2 valores inteiros e positivo, hora de inicio e hora de termino de um jogo, verifica se são horários válidos e porm fim apresenta na tela quantas horas o jogo durou.
-
 ___________________________________________________________
 
 ### exercicio_12.py:
 O programa solicita a entrada de 1 valor inteiro e positivo, este valor é uma idade em dias, após isso ele calcula e apresenta na tela quantos anos, meses e dias o valor apresentado representa.
 -> Obs.: No cálculo, é considerado que todos os anos tem 365 dias e da mesma forma, todos os meses tem 30 dias.
+___________________________________________________________
+
+### exercicio_13.py:
+O programa é diferente dos outros apresentados, em suma ele abre um arquivo JSON e guarda na variável conteúdo. Após temos a possibilidade de executar 4 funções: ex_01(), ex_02(), ex_03() & ex_04(). O programa conta também com a função principal(main). No JSON contém informações referente a uma partida de futebol da copa do Brasil.
+
+
+##### ex_01(): 
+apresenta todo o conteudo do JSON
+
+##### ex_02(): 
+Verifica qual foi o time vencedor e apresenta o nome do mesmo
+
+##### ex_03(): 
+Armazena os valores: Nome do estádio, Placar & Status do jogo, nas respectivas variáveis: ne, p & sj. Por fim apresenta os valores das 3 variávies.
+
+##### ex_04(): 
+Apresenta todas as chaves e valores contidos no JSON referente ao time visitante. 
+
 ___________________________________________________________
 ___________________________________________________________
 
