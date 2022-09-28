@@ -80,16 +80,16 @@ O programa é diferente dos outros apresentados, em suma ele abre um arquivo JSO
 
 
 * ##### ex_01(): 
-**apresenta todo o conteudo do JSON
+    apresenta todo o conteudo do JSON
 
 * ##### ex_02(): 
-**Verifica qual foi o time vencedor e apresenta o nome do mesmo
+    Verifica qual foi o time vencedor e apresenta o nome do mesmo
 
 * ##### ex_03(): 
-**Armazena os valores: Nome do estádio, Placar & Status do jogo, nas respectivas variáveis: ne, p & sj. Por fim apresenta os valores das 3 variávies.
+    Armazena os valores: Nome do estádio, Placar & Status do jogo, nas respectivas variáveis: ne, p & sj. Por fim apresenta os valores das 3 variávies.
 
 * ##### ex_04(): 
-**Apresenta todas as chaves e valores contidos no JSON referente ao time visitante. 
+    Apresenta todas as chaves e valores contidos no JSON referente ao time visitante. 
 
 ___________________________________________________________
 ___________________________________________________________
