@@ -76,11 +76,12 @@ O programa solicita a entrada de 1 valor inteiro e positivo, este valor é uma i
 ___________________________________________________________
 
 ### exercicio_13.py:
-O programa é diferente dos outros apresentados, em suma ele abre um arquivo JSON e guarda na variável conteúdo. Após temos a possibilidade de executar 4 funções: ex_01(), ex_02(), ex_03() & ex_04(). O programa conta também com a função principal(main). No JSON contém informações referente a uma partida de futebol da copa do Brasil.
-
+O programa é diferente dos outros apresentados, em suma ele abre dois arquivo JSON e guarda nas variáveis conteudo_part e conteudo_camp. Após temos a possibilidade de executar 4 funções(ex_01(), ex_02(), ex_03() & ex_04()) com o arquivo partida.json e 3 funções(ex_05(), ex_06() & ex_07())) com o arquivo campeonato.json. O programa conta também com a função principal(main).
+No arquivo partida.json contém informações referente a uma partida de futebol da copa do Brasil.
+No arquivo campeonato.json contém informações referente a uma edição do campeonato brasileiro
 
 * ##### ex_01(): 
-    apresenta todo o conteudo do JSON
+    Apresenta todo o conteudo do JSON
 
 * ##### ex_02(): 
     Verifica qual foi o time vencedor e apresenta o nome do mesmo
@@ -91,6 +92,14 @@ O programa é diferente dos outros apresentados, em suma ele abre um arquivo JSO
 * ##### ex_04(): 
     Apresenta todas as chaves e valores contidos no JSON referente ao time visitante. 
 
+* ##### ex_05(): 
+    Apresenta todos aos dados contidos no JSON. 
+    
+* ##### ex_06(): 
+    Apresenta os primeiros dados(chave+valor) dos subdicionários "edicao_atual", "fase_atual" e "rodada_atual".
+
+* ##### ex_07(): 
+    Apresenta as principais chaves contidos no JSON utilizando um loop FOR. 
 ___________________________________________________________
 ___________________________________________________________
 
