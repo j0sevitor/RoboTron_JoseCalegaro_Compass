@@ -1,33 +1,33 @@
 import json
 with open ('arquivos\partida.json', 'r', encoding='UTF-8') as partida_json:
-    conteudo_part = json.loads(partida_json.read())
+    conteudo_partida = json.loads(partida_json.read())
 
 with open ('arquivos\campeonato.json', 'r', encoding='UTF-8') as campeonato_json:
-    conteudo_camp = json.loads(campeonato_json.read())
+    conteudo_campeonato = json.loads(campeonato_json.read())
 
 def ex_01():# printa todo o conteudo do JSON
-    print(conteudo_part) 
+    print(conteudo_partida) 
 
 def ex_02():# verifica qual foi o time vencedor e printa o nome do mesmo
-    pm = conteudo_part['copa-do-brasil'][0]['placar_mandante']
-    pv = conteudo_part['copa-do-brasil'][0]['placar_visitante'] 
-    if pm > pv: print(conteudo_part['copa-do-brasil'][0]['time_mandante']['nome_popular'])
-    else: print(conteudo_part['copa-do-brasil'][0]['time_visitante']['nome_popular'])
+    pm = conteudo_partida['copa-do-brasil'][0]['placar_mandante']
+    pv = conteudo_partida['copa-do-brasil'][0]['placar_visitante'] 
+    if pm > pv: print(conteudo_partida['copa-do-brasil'][0]['time_mandante']['nome_popular'])
+    else: print(conteudo_partida['copa-do-brasil'][0]['time_visitante']['nome_popular'])
     
 def ex_03():# armazena 3 valores em 3 variáveis e printa elas
-    ne = conteudo_part['copa-do-brasil'][0]['estadio']['nome_popular']
-    p = conteudo_part['copa-do-brasil'][0]['placar']
-    sj = conteudo_part['copa-do-brasil'][0]['status']
+    ne = conteudo_partida['copa-do-brasil'][0]['estadio']['nome_popular']
+    p = conteudo_partida['copa-do-brasil'][0]['placar']
+    sj = conteudo_partida['copa-do-brasil'][0]['status']
     print('Nome do estádio: {}\nPlacar: {}\nStatus do jogo: {}'.format(ne, p, sj))
 
 def ex_04():# printando as chaves e valores de determinado objeto
-    print(conteudo_part['copa-do-brasil'][0]['time_visitante']) 
+    print(conteudo_partida['copa-do-brasil'][0]['time_visitante']) 
 
 def ex_05():# printa todo o conteudo do JSON
-    print(conteudo_camp) 
+    print(conteudo_campeonato) 
 
 def ex_06():# printa os primeiros dados de 3 subdicionarios
-    for data in conteudo_camp['edicao_atual'], conteudo_camp['fase_atual'], conteudo_camp['rodada_atual']:
+    for data in conteudo_campeonato['edicao_atual'], conteudo_campeonato['fase_atual'], conteudo_campeonato['rodada_atual']:
         for i in data.keys():
             for j in data.values():
                 print('chave: {}, Valor: {}'.format(i, j))
@@ -35,7 +35,7 @@ def ex_06():# printa os primeiros dados de 3 subdicionarios
             break
     
 def ex_07():# printa as chaves principais 
-    for k in conteudo_camp.keys():
+    for k in conteudo_campeonato.keys():
         print(k)
 
 def main():
