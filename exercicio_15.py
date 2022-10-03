@@ -5,8 +5,8 @@ arquivo = pd.read_csv('arquivos\ptable.csv', encoding='UTF-8',sep=",")
 def ex_A():
     i = 0
     while(i != 1):
-        #coluna = input('Qual a coluna da tabela? -> ')
-        print(arquivo[arquivo[input('Qual a coluna da tabela? -> ')]])
+        coluna = str(input('Qual a coluna da tabela? -> '))
+        print(arquivo[arquivo[coluna]])
 
 def ex_B():
     simb = input('Qual o simbolo do elemento? -> ')
