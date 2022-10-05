@@ -1,3 +1,6 @@
+# O programa solicita a entrada de 2 valores inteiros e positivos,
+# e através de uma função, apresenta se a soma dos valores
+# é 'Par' ou 'Impar'.
 def imparPar(v1, v2):
     v1 = v1 + v2
     if v1%2 == 0: print('A soma resulta em um numero | PAR |')

@@ -1,17 +1,20 @@
 import pandas as pd
 
-arquivo = pd.read_csv('arquivos\ptable.csv', encoding='UTF-8',sep=",")
+arquivo = pd.read_csv('ptable.csv', encoding='UTF-8',sep=",")
 
+#Apresenta na tela a coluna informada pelo usuário
 def ex_A():
     i = 0
     while(i != 1):
-        coluna = str(input('Qual a coluna da tabela? -> '))
-        print(arquivo[arquivo[coluna]])
-
+        coluna = arquivo[(str(input('Qual a coluna da tabela? -> ')))]
+        print(coluna)
+        
+#Apresenta na tela os dados do elemento informado pelo usuário
 def ex_B():
     simb = input('Qual o simbolo do elemento? -> ')
     print(arquivo[arquivo["Simbolo"] == simb])
 
+#Apresenta na tela todo o csv
 def ex_C():
     print(arquivo)
 
