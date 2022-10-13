@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221013 14:18:11.133" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221013 15:44:21.495" rpa="false" schemaversion="3">
 <suite id="s1" name="Base" source="D:\Desktop\Compass\sprint_5\Projetobasico\base.robot">
 <test id="s1-t1" name="Cenario: GET Todos os usuarios 200" line="11">
 <kw name="Criar Sessao">
@@ -7,10 +7,10 @@
 <arg>serverest</arg>
 <arg>https://serverest.dev</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20221013 14:18:11.237" level="INFO">Creating Session using : alias=serverest, url=https://serverest.dev, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20221013 14:18:11.237" endtime="20221013 14:18:11.237"/>
+<msg timestamp="20221013 15:44:21.602" level="INFO">Creating Session using : alias=serverest, url=https://serverest.dev, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20221013 15:44:21.602" endtime="20221013 15:44:21.602"/>
 </kw>
-<status status="PASS" starttime="20221013 14:18:11.237" endtime="20221013 14:18:11.238"/>
+<status status="PASS" starttime="20221013 15:44:21.602" endtime="20221013 15:44:21.602"/>
 </kw>
 <kw name="GET Endpoint /usuarios">
 <kw name="GET On Session" library="RequestsLibrary">
@@ -18,16 +18,16 @@
 <arg>serverest</arg>
 <arg>/usuarios</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<msg timestamp="20221013 14:18:11.641" level="INFO">GET Request : url=https://serverest.dev/usuarios 
+<msg timestamp="20221013 15:44:22.170" level="INFO">GET Request : url=https://serverest.dev/usuarios 
  path_url=/usuarios 
  headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20221013 14:18:11.642" level="INFO">GET Response : url=https://serverest.dev/usuarios 
+<msg timestamp="20221013 15:44:22.172" level="INFO">GET Response : url=https://serverest.dev/usuarios 
  status=200, reason=OK 
- headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'x-moesif-transaction-id': '2de239bc-4b9e-4aad-b0f9-520a6be16172', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': '27af647bed56cb1a8ffac5318e0b58e6;o=1', 'Date': 'Thu, 13 Oct 2022 17:18:11 GMT', 'Server': 'Google Frontend', 'Content-Length': '3009'} 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'x-moesif-transaction-id': '200d2a50-1eb8-4a96-95c6-dbdc340d4b55', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': '3415327f6c6e1442d79e34ce6a2161d5;o=1', 'Date': 'Thu, 13 Oct 2022 18:44:22 GMT', 'Server': 'Google Frontend', 'Content-Length': '681'} 
  body={
-    "quantidade": 14,
+    "quantidade": 3,
     "usuarios": [
         {
             "nome": "Fulano da Silva",
@@ -37,327 +37,75 @@
             "_id": "0uxuPY0cbmQhpEz1"
         },
         {
-            "nome": "Jarbos Priesto",
-            "email": "testeiuoll@gmail.com",
-            "password": "123",
-            "administrador": "true",
-            "_id": "1exAUCp5ggP6gCpd"
-        },
-        {
-            "nome": "jadees priest",
-            "email": "testejadeesp123@gmail.com",
-            "password": "123",
-            "administrador": "true",
-            "_id": "9tb6dcGakImaG1JT"
-        },
-        {
-            "nome": "jirsen priest",
-            "email": "testejirsenp123@gmail.com",
-            "password": "123",
-            "administrador": "true",
-            "_id": "AvSXWmjPQHM1041j"
-        },
-        {
             "nome": "jerson priest",
             "email": "testejersonp123@gmail.com",
             "password": "123",
             "administrador": "true",
-            "_id": "BuDTuUzJKv8EohZI"
+            "_id": "UN6xMjVkGVaPydlt"
         },
         {
-            "nome": "jirsan priest",
-            "email": "testejirsanp123@gmail.com",
+            "nome": "jarson priest",
+            "email": "testejarsonp123@gmail.com",
             "password": "123",
             "administrador": "true",
-            "_id": "TjMgTqBvtUC8qswV"
-        },
-        {
-            "nome": "jarsen priest",
-            "email": "testejarsenp123@gmail.com",
-            "password": "123",
-            "administrador": "true",
-            "_id": "VLY1omruKoKnmSXs"
-        },
-        {
-            "nome": "jadies priest",
-            "email": "testejadiesp123@gmail.com",
-            "password": "123",
-            "administrador": "true",
-            "_id": "W8Zn0dANIVNoyoyb"
-        },
-        {
-            "nome": "jads priest",
-            "email": "testejadsp123@gmail.com",
-            "password": "123",
-            "administrador": "true",
-            "_id": "XBciii2itWjaI72D"
-        },
-        {
-            "nome": "jads priest",
-            "email": "t3st324@gmail.com",
-            "password": "123",
-            "administrador": "true",
-            "_id": "XIcICze4NRLTQS0O"
-        },
-        {
-            "nome": "jarsan priest",
-            "email": "testejarsanp123@gmail.com",
-            "password": "123",
-            "administrador": "true",
-            "_id": "gmPPFE5XfqLeSbfw"
-        },
-        {
-            "nome": "jersn priest",
-            "email": "t3st5454@gmail.com",
-            "password": "123",
-            "administrador": "true",
-            "_id": "h8ttcxHabT8njDAX"
-        },
-        {
-            "nome": "Jarbus Priestu",
-            "email": "testeiuol@gmail.com",
-            "password": "123",
-            "administrador": "true",
-            "_id": "sKNxTOiVzPPu1i6F"
-        },
-        {
-            "nome": "jiaersen priest",
-            "email": "testejiaersenp123@gmail.com",
-            "password": "123",
-            "administrador": "true",
-            "_id": "zeW0O2liD9Vv9qz6"
+            "_id": "kSdnQYb6i37yR88D"
         }
     ]
 } 
  </msg>
-<msg timestamp="20221013 14:18:11.642" level="INFO">C:\Users\Kyros\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'serverest.dev'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+<msg timestamp="20221013 15:44:22.172" level="INFO">C:\Users\Kyros\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'serverest.dev'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg timestamp="20221013 14:18:11.642" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20221013 14:18:11.238" endtime="20221013 14:18:11.643"/>
+<msg timestamp="20221013 15:44:22.172" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20221013 15:44:21.603" endtime="20221013 15:44:22.173"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${response}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20221013 14:18:11.644" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20221013 14:18:11.643" endtime="20221013 14:18:11.644"/>
+<msg timestamp="20221013 15:44:22.174" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20221013 15:44:22.173" endtime="20221013 15:44:22.174"/>
 </kw>
-<status status="PASS" starttime="20221013 14:18:11.238" endtime="20221013 14:18:11.645"/>
+<status status="PASS" starttime="20221013 15:44:21.603" endtime="20221013 15:44:22.174"/>
 </kw>
 <kw name="Validar Status Code &quot;200&quot;" sourcename="Validar Status Code &quot;${statuscode}&quot;">
 <kw name="Should Be True" library="BuiltIn">
 <arg>${response.status_code} == ${statuscode}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" starttime="20221013 14:18:11.646" endtime="20221013 14:18:11.650"/>
+<status status="PASS" starttime="20221013 15:44:22.176" endtime="20221013 15:44:22.178"/>
 </kw>
-<status status="PASS" starttime="20221013 14:18:11.646" endtime="20221013 14:18:11.650"/>
+<status status="PASS" starttime="20221013 15:44:22.175" endtime="20221013 15:44:22.178"/>
 </kw>
-<status status="PASS" starttime="20221013 14:18:11.236" endtime="20221013 14:18:11.651"/>
-</test>
-<test id="s1-t2" name="Cenario: POST cadastrar Usuario 201" line="16">
-<kw name="Criar Sessao">
-<kw name="Create Session" library="RequestsLibrary">
-<arg>serverest</arg>
-<arg>https://serverest.dev</arg>
-<doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20221013 14:18:11.656" level="INFO">Creating Session using : alias=serverest, url=https://serverest.dev, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20221013 14:18:11.656" endtime="20221013 14:18:11.656"/>
+<kw name="Validar Quantidade &quot;${3}&quot;" sourcename="Validar Quantidade &quot;${quantidade}&quot;">
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${response.json()["quantidade"]}</arg>
+<arg>${quantidade}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20221013 15:44:22.180" endtime="20221013 15:44:22.182"/>
 </kw>
-<status status="PASS" starttime="20221013 14:18:11.655" endtime="20221013 14:18:11.658"/>
+<status status="PASS" starttime="20221013 15:44:22.179" endtime="20221013 15:44:22.182"/>
 </kw>
-<kw name="POST Endpoint /usuarios">
-<kw name="Create Dictionary" library="BuiltIn">
-<var>&amp;{payload}</var>
-<arg>nome=jeirson priest</arg>
-<arg>email=testejeirsonp123@gmail.com</arg>
-<arg>password=123</arg>
-<arg>administrador=true</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20221013 14:18:11.660" level="INFO">&amp;{payload} = { nome=jeirson priest | email=testejeirsonp123@gmail.com | password=123 | administrador=true }</msg>
-<status status="PASS" starttime="20221013 14:18:11.660" endtime="20221013 14:18:11.660"/>
-</kw>
-<kw name="POST On Session" library="RequestsLibrary">
-<var>${response}</var>
-<arg>serverest</arg>
-<arg>/usuarios</arg>
-<arg>data=&amp;{payload}</arg>
-<doc>Sends a POST request on a previously created HTTP Session.</doc>
-<msg timestamp="20221013 14:18:12.049" level="INFO">POST Request : url=https://serverest.dev/usuarios 
- path_url=/usuarios 
- headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '86', 'Content-Type': 'application/x-www-form-urlencoded'} 
- body=nome=jeirson+priest&amp;email=testejeirsonp123%40gmail.com&amp;password=123&amp;administrador=true 
- </msg>
-<msg timestamp="20221013 14:18:12.049" level="INFO">POST Response : url=https://serverest.dev/usuarios 
- status=201, reason=Created 
- headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'x-moesif-transaction-id': '73eb05c1-19c0-4ce4-aa2a-ba7a31658492', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': '5a539ff107b34cc7b1b0218c3788bbe5', 'Date': 'Thu, 13 Oct 2022 17:18:12 GMT', 'Server': 'Google Frontend', 'Content-Length': '82'} 
- body={
-    "message": "Cadastro realizado com sucesso",
-    "_id": "xCqwKeSOIUYQc28g"
-} 
- </msg>
-<msg timestamp="20221013 14:18:12.049" level="INFO">C:\Users\Kyros\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'serverest.dev'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
-  warnings.warn(</msg>
-<msg timestamp="20221013 14:18:12.049" level="INFO">${response} = &lt;Response [201]&gt;</msg>
-<status status="PASS" starttime="20221013 14:18:11.660" endtime="20221013 14:18:12.049"/>
-</kw>
+<kw name="Printar Conteudo Response">
 <kw name="Log To Console" library="BuiltIn">
-<arg>Response: ${response.content}</arg>
+<arg>Response: ${response.json()["usuarios"][0]["nome"]}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221013 14:18:12.049" endtime="20221013 14:18:12.051"/>
+<status status="PASS" starttime="20221013 15:44:22.184" endtime="20221013 15:44:22.185"/>
 </kw>
-<kw name="Set Global Variable" library="BuiltIn">
-<arg>${response}</arg>
-<doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20221013 14:18:12.052" level="INFO">${response} = &lt;Response [201]&gt;</msg>
-<status status="PASS" starttime="20221013 14:18:12.052" endtime="20221013 14:18:12.052"/>
+<status status="PASS" starttime="20221013 15:44:22.183" endtime="20221013 15:44:22.186"/>
 </kw>
-<status status="PASS" starttime="20221013 14:18:11.659" endtime="20221013 14:18:12.052"/>
-</kw>
-<kw name="Validar Status Code &quot;201&quot;" sourcename="Validar Status Code &quot;${statuscode}&quot;">
-<kw name="Should Be True" library="BuiltIn">
-<arg>${response.status_code} == ${statuscode}</arg>
-<doc>Fails if the given condition is not true.</doc>
-<status status="PASS" starttime="20221013 14:18:12.053" endtime="20221013 14:18:12.055"/>
-</kw>
-<status status="PASS" starttime="20221013 14:18:12.053" endtime="20221013 14:18:12.055"/>
-</kw>
-<status status="PASS" starttime="20221013 14:18:11.654" endtime="20221013 14:18:12.055"/>
-</test>
-<test id="s1-t3" name="Cenario: PUT Editar Usuario 200" line="21">
-<kw name="Criar Sessao">
-<kw name="Create Session" library="RequestsLibrary">
-<arg>serverest</arg>
-<arg>https://serverest.dev</arg>
-<doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20221013 14:18:12.058" level="INFO">Creating Session using : alias=serverest, url=https://serverest.dev, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20221013 14:18:12.058" endtime="20221013 14:18:12.058"/>
-</kw>
-<status status="PASS" starttime="20221013 14:18:12.058" endtime="20221013 14:18:12.058"/>
-</kw>
-<kw name="PUT Endpoint /usuarios">
-<kw name="Create Dictionary" library="BuiltIn">
-<var>&amp;{payload}</var>
-<arg>nome=jade priest</arg>
-<arg>email=testejadep123@gmail.com</arg>
-<arg>password=123</arg>
-<arg>administrador=true</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20221013 14:18:12.059" level="INFO">&amp;{payload} = { nome=jade priest | email=testejadep123@gmail.com | password=123 | administrador=true }</msg>
-<status status="PASS" starttime="20221013 14:18:12.059" endtime="20221013 14:18:12.059"/>
-</kw>
-<kw name="PUT On Session" library="RequestsLibrary">
-<var>${response}</var>
-<arg>serverest</arg>
-<arg>/usuarios/BuDTuUzJKv8EohZI</arg>
-<arg>data=&amp;{payload}</arg>
-<doc>Sends a PUT request on a previously created HTTP Session.</doc>
-<msg timestamp="20221013 14:18:12.442" level="INFO">PUT Request : url=https://serverest.dev/usuarios/BuDTuUzJKv8EohZI 
- path_url=/usuarios/BuDTuUzJKv8EohZI 
- headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '80', 'Content-Type': 'application/x-www-form-urlencoded'} 
- body=nome=jade+priest&amp;email=testejadep123%40gmail.com&amp;password=123&amp;administrador=true 
- </msg>
-<msg timestamp="20221013 14:18:12.443" level="INFO">PUT Response : url=https://serverest.dev/usuarios/BuDTuUzJKv8EohZI 
- status=200, reason=OK 
- headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'x-moesif-transaction-id': '2c34ba91-0b7e-4c28-a367-4535312a31af', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': '06f09e3a28d9287860d1684fed8bebba', 'Date': 'Thu, 13 Oct 2022 17:18:12 GMT', 'Server': 'Google Frontend', 'Content-Length': '50'} 
- body={
-    "message": "Registro alterado com sucesso"
-} 
- </msg>
-<msg timestamp="20221013 14:18:12.443" level="INFO">C:\Users\Kyros\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'serverest.dev'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
-  warnings.warn(</msg>
-<msg timestamp="20221013 14:18:12.444" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20221013 14:18:12.060" endtime="20221013 14:18:12.444"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>Response: ${response.content}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221013 14:18:12.444" endtime="20221013 14:18:12.446"/>
-</kw>
-<kw name="Set Global Variable" library="BuiltIn">
-<arg>${response}</arg>
-<doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20221013 14:18:12.447" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20221013 14:18:12.446" endtime="20221013 14:18:12.447"/>
-</kw>
-<status status="PASS" starttime="20221013 14:18:12.059" endtime="20221013 14:18:12.447"/>
-</kw>
-<kw name="Validar Status Code &quot;200&quot;" sourcename="Validar Status Code &quot;${statuscode}&quot;">
-<kw name="Should Be True" library="BuiltIn">
-<arg>${response.status_code} == ${statuscode}</arg>
-<doc>Fails if the given condition is not true.</doc>
-<status status="PASS" starttime="20221013 14:18:12.448" endtime="20221013 14:18:12.451"/>
-</kw>
-<status status="PASS" starttime="20221013 14:18:12.448" endtime="20221013 14:18:12.451"/>
-</kw>
-<status status="PASS" starttime="20221013 14:18:12.057" endtime="20221013 14:18:12.452"/>
-</test>
-<test id="s1-t4" name="Cenario: DELETE Deletar Usuario 200" line="26">
-<kw name="Criar Sessao">
-<kw name="Create Session" library="RequestsLibrary">
-<arg>serverest</arg>
-<arg>https://serverest.dev</arg>
-<doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20221013 14:18:12.456" level="INFO">Creating Session using : alias=serverest, url=https://serverest.dev, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20221013 14:18:12.456" endtime="20221013 14:18:12.456"/>
-</kw>
-<status status="PASS" starttime="20221013 14:18:12.455" endtime="20221013 14:18:12.456"/>
-</kw>
-<kw name="DELETE Endpoint /usuarios">
-<kw name="DELETE On Session" library="RequestsLibrary">
-<var>${response}</var>
-<arg>serverest</arg>
-<arg>/usuarios/BuDTuUzJKv8EohZI</arg>
-<doc>Sends a DELETE request on a previously created HTTP Session.</doc>
-<msg timestamp="20221013 14:18:12.842" level="INFO">DELETE Request : url=https://serverest.dev/usuarios/BuDTuUzJKv8EohZI 
- path_url=/usuarios/BuDTuUzJKv8EohZI 
- headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
- body=None 
- </msg>
-<msg timestamp="20221013 14:18:12.842" level="INFO">DELETE Response : url=https://serverest.dev/usuarios/BuDTuUzJKv8EohZI 
- status=200, reason=OK 
- headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'x-moesif-transaction-id': 'db69ae18-b9fc-4a30-ab20-eed566c1c030', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': '1135431ad3e2c95e5f99441ebcf82804', 'Date': 'Thu, 13 Oct 2022 17:18:13 GMT', 'Server': 'Google Frontend', 'Content-Length': '51'} 
- body={
-    "message": "Registro excluído com sucesso"
-} 
- </msg>
-<msg timestamp="20221013 14:18:12.842" level="INFO">C:\Users\Kyros\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'serverest.dev'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
-  warnings.warn(</msg>
-<msg timestamp="20221013 14:18:12.843" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20221013 14:18:12.458" endtime="20221013 14:18:12.843"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>Response: ${response.content}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221013 14:18:12.843" endtime="20221013 14:18:12.844"/>
-</kw>
-<kw name="Set Global Variable" library="BuiltIn">
-<arg>${response}</arg>
-<doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20221013 14:18:12.845" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20221013 14:18:12.845" endtime="20221013 14:18:12.845"/>
-</kw>
-<status status="PASS" starttime="20221013 14:18:12.458" endtime="20221013 14:18:12.846"/>
-</kw>
-<kw name="Validar Status Code &quot;200&quot;" sourcename="Validar Status Code &quot;${statuscode}&quot;">
-<kw name="Should Be True" library="BuiltIn">
-<arg>${response.status_code} == ${statuscode}</arg>
-<doc>Fails if the given condition is not true.</doc>
-<status status="PASS" starttime="20221013 14:18:12.848" endtime="20221013 14:18:12.848"/>
-</kw>
-<status status="PASS" starttime="20221013 14:18:12.847" endtime="20221013 14:18:12.849"/>
-</kw>
-<status status="PASS" starttime="20221013 14:18:12.454" endtime="20221013 14:18:12.849"/>
+<tag>GET</tag>
+<status status="PASS" starttime="20221013 15:44:21.602" endtime="20221013 15:44:22.187"/>
 </test>
 <doc>Arquivo simples para requisicoes HTTP em APIs Rest</doc>
-<status status="PASS" starttime="20221013 14:18:11.135" endtime="20221013 14:18:12.850"/>
+<status status="PASS" starttime="20221013 15:44:21.497" endtime="20221013 15:44:22.189"/>
 </suite>
 <statistics>
 <total>
-<stat pass="4" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">GET</stat>
 </tag>
 <suite>
-<stat pass="4" fail="0" skip="0" id="s1" name="Base">Base</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Base">Base</stat>
 </suite>
 </statistics>
 <errors>
