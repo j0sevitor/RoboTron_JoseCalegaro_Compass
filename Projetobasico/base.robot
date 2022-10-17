@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation    Arquivo simples para requisicoes HTTP em APIs Rest
 Library          RequestsLibrary
+Resource         ./usuarios_keywords.robot
 
 
 *** Variables ***
@@ -16,7 +17,7 @@ Cenario: GET Todos os usuarios 200
     Criar Sessao
     GET Endpoint /usuarios
     Validar Status Code "200"
-    Validar Quantidade "${3}"
+    Validar Quantidade "${1}"
     Printar Conteudo Response
 
 Cenario: POST cadastrar Usuario 201
@@ -42,26 +43,7 @@ Cenario: DELETE Deletar Usuario 200
 Criar Sessao
     Create Session    serverest     https://serverest.dev
 
-GET Endpoint /usuarios
-    ${response}            GET On Session    serverest    /usuarios
-    Set Global Variable    ${response}
 
-POST Endpoint /usuarios
-    &{payload}        Create Dictionary        nome=${nome_do_usuario}    email=${email_do_usuario}        password=${senha_do_usuario}        administrador=true
-    ${response}        POST On Session    serverest    /usuarios        data=&{payload}
-    Log To console    Response: ${response.content} 
-    Set Global Variable    ${response}
-
-PUT Endpoint /usuarios
-    &{payload}        Create Dictionary        nome=jade priest    email=testejadep123@gmail.com        password=123        administrador=true
-    ${response}    PUT On Session    serverest    /usuarios/BuDTuUzJKv8EohZI    data=&{payload}
-    Log To console    Response: ${response.content} 
-    Set Global Variable    ${response}
-
-DELETE Endpoint /usuarios
-    ${response}    DELETE On Session    serverest    /usuarios/BuDTuUzJKv8EohZI
-    Log To console    Response: ${response.content}
-    Set Global Variable    ${response} 
 
 Validar Status Code "${statuscode}"
     Should Be True    ${response.status_code} == ${statuscode}
