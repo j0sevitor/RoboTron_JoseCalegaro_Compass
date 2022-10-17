@@ -1,1 +1,1 @@
-Main is default repositorya
+Main is default repository

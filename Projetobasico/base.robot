@@ -4,6 +4,9 @@ Library          RequestsLibrary
 
 
 *** Variables ***
+${nome_do_usuario}            herbert richards
+${senha_do_usuario}           teste123
+${email_do_usuario}           herbertrteste@gmail.com
 
 
 #token dura 10 minutos
@@ -44,7 +47,7 @@ GET Endpoint /usuarios
     Set Global Variable    ${response}
 
 POST Endpoint /usuarios
-    &{payload}        Create Dictionary        nome=jerson priest    email=testejersonp123@gmail.com        password=123        administrador=true
+    &{payload}        Create Dictionary        nome=${nome_do_usuario}    email=${email_do_usuario}        password=${senha_do_usuario}        administrador=true
     ${response}        POST On Session    serverest    /usuarios        data=&{payload}
     Log To console    Response: ${response.content} 
     Set Global Variable    ${response}
