@@ -2,6 +2,8 @@
 Documentation    Arquivo simples para requisicoes HTTP em APIs Rest
 Library          RequestsLibrary
 Resource         ./usuarios_keywords.robot
+Resource         ./login_keywords.robot
+Resource         ./produtos_keywords.robot
 
 
 *** Variables ***
@@ -39,11 +41,22 @@ Cenario: DELETE Deletar Usuario 200
     DELETE Endpoint /usuarios
     Validar Status Code "200"
 
+Cenario: POST Realizar Login 200
+    [Tags]    POSTLOGIN
+    Criar Sessao
+    POST Endpoint /login
+    Validar Status Code "200"
+
+Cenario: POST Criar Produto 201
+    [Tags]    POSTPRODUTO
+    Criar Sessao
+    POST Endpoint /produtos
+    Validar Status Code "201"
+
+
 *** Keywords ***
 Criar Sessao
     Create Session    serverest     https://serverest.dev
-
-
 
 Validar Status Code "${statuscode}"
     Should Be True    ${response.status_code} == ${statuscode}
