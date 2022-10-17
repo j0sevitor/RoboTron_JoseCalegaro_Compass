@@ -50,9 +50,17 @@ Cenario: POST Realizar Login 200
 Cenario: POST Criar Produto 201
     [Tags]    POSTPRODUTO
     Criar Sessao
+    Fazer Login e Armazenar Token
     POST Endpoint /produtos
     Validar Status Code "201"
-
+    
+Cenario: DELETE Excluir produto 200
+    [Tags]    DELETEPRODUTO
+    Criar Sessao
+    Fazer Login e Armazenar Token
+    Criar um Produto e Armazenar ID
+    DELETE Endpoint /produtos
+    Validar Status Code "200"
 
 *** Keywords ***
 Criar Sessao
