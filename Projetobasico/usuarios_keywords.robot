@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation        Keywords e Variaveis para ações de endpoint de usuarios
 Resource             ./common.robot
+Resource             ./dynamics.robot
 *** Variables ***
 ${nome_do_usuario}            herbert richards
 ${senha_do_usuario}           teste123
@@ -37,8 +38,13 @@ Validar Se Mensagem Contem "${palavra}"
 Printar Conteudo Response
     Log To Console    Response: ${response}
 
-Criar Usuario Estatico Valido
+Cadastrar Usuario Estatico Valido
     ${json}            Importar JSON Estatico    json_usuario_ex.json
     ${payload}         Set Variable        ${json["user_valido"]}
+    Set Global Variable    ${payload}
+    POST Endpoint /usuarios
+
+Cadastrar Usuario Dinamico Valido
+    ${payload}        Criar Dados Usuario Valido
     Set Global Variable    ${payload}
     POST Endpoint /usuarios

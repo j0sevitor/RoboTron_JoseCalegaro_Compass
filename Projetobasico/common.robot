@@ -2,10 +2,6 @@
 Documentation        Keywords e Variaveis para ações gerais
 Library              OperatingSystem
 
-*** Variables ***
-${email_para_login}        fulano@qa.com
-${password_para_login}     teste
-
 
 *** Keywords ***
 

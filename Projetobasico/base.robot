@@ -65,7 +65,13 @@ Cenario: DELETE Excluir produto 200
 Cenario: POST Criar Usuario de Massa Estatica 201
     [Tags]    POSTCRIARUSUARIOESTATICO
     Criar Sessao
-    Criar Usuario Estatico Valido
+    Cadastrar Usuario Estatico Valido
+    Validar Status Code "201"
+
+Cenario: POST Criar Usuario de Massa dinamica 201
+    [Tags]    POSTCRIARUSUARIODINAMICO
+    Criar Sessao
+    Cadastrar Usuario Dinamico Valido
     Validar Status Code "201"
 *** Keywords ***
 Criar Sessao
