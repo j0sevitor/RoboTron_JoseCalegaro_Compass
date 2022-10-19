@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation        Keywords e Variaveis para ações de endpoint de usuarios
-Resource             ./common.robot
-Resource             ./dynamics.robot
+Resource             ../support/base.robot
+
 *** Variables ***
 ${nome_do_usuario}            herbert richards
 ${senha_do_usuario}           teste123

@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation        Keywords e Variaveis para ações de endpoint de login
+Resource             ../support/base.robot
 
 *** Variables ***
 ${email_para_login}        fulano@qa.com
