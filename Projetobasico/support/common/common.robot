@@ -10,6 +10,9 @@ Validar Status Code "${statuscode}"
 
 Importar JSON Estatico
     [Arguments]        ${nome__arquivo}
-    ${arquivo}         Get File    ${EXECDIR}/${nome__arquivo}
+    ${arquivo}         Get File    ${EXECDIR}/support/fixtures/static/${nome__arquivo}
     ${data}            Evaluate        json.loads('''${arquivo}''')    json
     [Return]           ${data}
+
+Validar Se Mensagem Contem "${palavra}"
+    Should Contain    ${response.json()["message"]}    ${palavra}
